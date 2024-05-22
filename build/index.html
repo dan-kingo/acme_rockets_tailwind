@@ -18,7 +18,10 @@
           <button id="mobile" class="text-3xl sm:hidden focus:outline-none">
             &#9776;
           </button>
-          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <nav
+            class="hidden sm:block space-x-8 text-xl font-thin"
+            aria-label="main"
+          >
             <a href="#rockets" class="hover:opacity-75">Our Rockets</a>
             <a href="#testimonials" class="hover:opacity-75">Testimonials</a>
             <a href="#contact" class="hover:opacity-75">Contact Us</a>
@@ -26,5 +29,34 @@
         </div>
       </div>
     </div>
+
+    <main class="max-w-4xl mx-auto">
+      <div
+        id="hero"
+        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40"
+      >
+        <div class="sm:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+          >
+            We Boldy Go <span class="linear">Where No Rocket</span> Has Gone
+            Before...
+          </h1>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            We're building rockets for the next century today. From the moon to
+            Mars, Jupiter and beyond...
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+          >
+            Think Acme Rockets.
+          </p>
+        </div>
+        <img src="img/rocketdab.png" alt="rocketdab" class="w-1/2" />
+      </div>
+      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
+    </main>
   </body>
 </html>

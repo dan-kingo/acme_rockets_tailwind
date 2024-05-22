@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.linear {
+  background: linear-gradient(
+    90deg,
+    rgba(180, 58, 122, 1) 38%,
+    rgba(252, 69, 85, 1) 67%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
