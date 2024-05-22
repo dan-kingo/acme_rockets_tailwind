@@ -183,6 +183,47 @@
       <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
 
       <!-- contact us section -->
+      <div id="contact" class="p-6 my-12 scroll-mt-16">
+        <h1
+          class="text-4xl sm:text-5xl text-slate-900 dark:text-white text-center font-bold mb-6 items-center"
+        >
+          Contact Us
+        </h1>
+
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full text-black text-xl p-3 dark:bg-slate-900 dark:text-white rounded-xl border border-solid border-slate-900 dark:border-none focus:outline-none"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full text-black dark:bg-slate-900 dark:text-white text-xl focus:outline-none p-3 rounded-xl border border-solid border-slate-900 dark:border-none resize-none"
+          ></textarea>
+          <button
+            class="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 active:opacity-80 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
     </main>
   </body>
 </html>
