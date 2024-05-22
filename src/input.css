@@ -20,3 +20,7 @@
     rgb(126, 74, 78) 67%
   );
 }
+
+.bg-radial {
+  background-image: radial-gradient(#020024, #084b5c);
+}

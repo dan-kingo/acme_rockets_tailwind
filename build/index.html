@@ -6,11 +6,11 @@
     <title>Acme Rockets</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <body class="min-h-screen bg-slate-100 dark:bg-black dark:text-white">
     <div
       class="bg-gradient-to-r from-purple-500 to-pink-500 text-white sticky z-10 top-0"
     >
-      <div class="mx-auto max-w-4xl flex justify-between items-center p-3">
+      <div class="mx-auto max-w-5xl flex justify-between items-center p-3">
         <h1 class="text-3xl font-thin">
           <a href="#hero">🚀 Acme Rockets</a>
         </h1>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <main class="max-w-4xl mx-auto">
+    <main class="max-w-5xl mx-auto">
       <!-- hero section -->
       <div
         id="hero"
@@ -62,7 +62,7 @@
       <!-- our rockets section -->
       <div id="rockets" class="p-6 my-12 scroll-mt-20">
         <h1
-          class="text-4xl sm:text-5xl text-slate-900 dark:text-white text-center font-bold mb-6 items-center"
+          class="text-4xl sm:text-5xl linear dark:text-white text-center font-bold mb-6 items-center"
         >
           Our Rockets
         </h1>
@@ -117,7 +117,7 @@
       <!-- testimonial section -->
       <div id="testimonials" class="p-6 my-12 scroll-mt-20">
         <h1
-          class="text-4xl sm:text-5xl text-slate-900 dark:text-white text-center font-bold mb-6 items-center"
+          class="text-4xl sm:text-5xl linear dark:text-white text-center font-bold mb-6 items-center"
         >
           Testimonials
         </h1>
@@ -185,14 +185,14 @@
       <!-- contact us section -->
       <div id="contact" class="p-6 my-12 scroll-mt-16">
         <h1
-          class="text-4xl sm:text-5xl text-slate-900 dark:text-white text-center font-bold mb-6 items-center"
+          class="text-4xl sm:text-5xl linear dark:text-white text-center font-bold mb-6 items-center"
         >
           Contact Us
         </h1>
 
         <form
           action=""
-          class="max-w-4xl mx-auto text-2xl flex flex-col items-left gap-4"
+          class="max-w-5xl mx-auto text-2xl flex flex-col items-left gap-4"
         >
           <label for="subject">Subject:</label>
           <input
@@ -203,27 +203,63 @@
             minlength="3"
             maxlength="60"
             placeholder="Your Subject"
-            class="w-full text-black text-xl p-3 dark:bg-slate-900 dark:text-white rounded-xl border border-solid border-slate-900 dark:border-none focus:outline-none"
+            class="w-full text-black text-xl p-3 dark:bg-slate-900 dark:text-white rounded-xl border border-none focus:outline-none"
           />
           <label for="message">Message:</label>
           <textarea
             name="message"
             id="message"
             cols="30"
-            rows="10"
+            rows="5"
             placeholder="Your Message"
             required
-            class="w-full text-black dark:bg-slate-900 dark:text-white text-xl focus:outline-none p-3 rounded-xl border border-solid border-slate-900 dark:border-none resize-none"
+            class="w-full text-black dark:bg-slate-900 dark:text-white text-xl focus:outline-none p-3 rounded-xl border border-none resize-none"
           ></textarea>
           <button
-            class="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 active:opacity-80 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+            class="bg-gradient-to-r from-pink-500 to-purple-500 hover:opacity-80 active:opacity-80 text-white p-3 w-48 rounded-xl dark:border-none"
           >
             Submit
           </button>
         </form>
       </div>
-
-      <hr class="bg-black dark:bg-white w-1/2 mx-auto" />
     </main>
+
+    <!-- footer section -->
+
+    <footer
+      id="footer"
+      class="bg-gradient-to-r from-pink-500 to-purple-500 text-white text-xl"
+    >
+      <section
+        class="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Acme Rocket-Powered Products, Inc.</h2>
+          555 Astro Way<br />
+          Fairfield, New Jersey 12345-5555<br />
+          Email:
+          <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a
+          ><br />
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">
+            Copyright &copy;
+            <span id="year"> </span>
+          </p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      date = new Date().getFullYear();
+      document.getElementById("year").textContent = date;
+    </script>
   </body>
 </html>
