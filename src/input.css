@@ -12,3 +12,11 @@
   background-clip: text;
   color: transparent;
 }
+
+.bg-linear {
+  background: linear-gradient(
+    90deg,
+    rgb(162, 110, 137) 38%,
+    rgb(126, 74, 78) 67%
+  );
+}
