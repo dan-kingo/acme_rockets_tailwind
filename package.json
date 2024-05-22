@@ -97,7 +97,7 @@
   },
   "scripts": {
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
-    "prettier": "npx prettier -write **/*.html"
+    "prettier": "npx prettier --write ./build/*.html"
   },
   "keywords": [],
   "author": "",
